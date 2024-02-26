@@ -1,0 +1,118 @@
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center; /* Align label text vertically with radio button */
+  }
+  
+  .checkbox-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px; /* Add margin to separate radio button from label text */
+  }
+  
+  .checkbox-group input[type="radio"]:checked {
+    background-color: #007bff;
+  }
+  
+  .checkbox-group input[type="radio"]:checked::before {
+    content: '\2713';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* Set initial opacity */
+    transition: opacity 0.5s ease-in-out; /* Add transition effect */
+  }
+
+  .form-container.submitted {
+    opacity: 0; /* Set opacity to 0 when submitted */
+  }
+  
+  .input-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+.output-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.output-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.output-item {
+  margin-bottom: 20px;
+}
+
+.output-item p {
+  margin: 5px 0;
+}
+
+.output-item hr {
+  margin-top: 15px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
